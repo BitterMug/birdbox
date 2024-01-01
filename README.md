@@ -4,7 +4,7 @@ Documentation created as class assignment following rules of said assigment.
 Pořizuje snímky PI kamerou. Přepíše aktuální obrázek a každých 20 minut obrázek archivuje. Umožňuje přístup pomocí jednoduchého webového GUI. (Zamýšleno pro hostování jako statický web například na AWS S3)
 
 # Instalace
-1. Raspbery PI s připojenou PI kamerou. PI kamerový modul 3 je preferován kvůli funkcím dynamického ostření.
+1. Raspberry PI s připojenou PI kamerou. PI kamerový modul 3 je preferován kvůli funkcím dynamického ostření.
 2. Stájnout repozitář se základními složkami a skriptem.
 `git clone https://github.com/BitterMug/birdbox.git`
 3. Nainstalujte balíček "ImageMagick" pro nástroj "convert".

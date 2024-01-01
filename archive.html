@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bird</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$(".images img").click(function(){
+  $("#full-image").attr("src", $(this).attr("src"));
+  $('#image-viewer').show();
+});
+
+$("#image-viewer .close").click(function(){
+  $('#image-viewer').hide();
+});
+
+});
+</script>
+</head>
+<body>
+<div class="images">
+pointer
+</div>
+
+<div id="image-viewer">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="full-image">
+</div>
+</body>
+</html>

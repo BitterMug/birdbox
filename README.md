@@ -1,9 +1,9 @@
 Documentation created as class assignment following rules of said assigment.
 
-#Úvod
+# Úvod
 Pořizuje snímky PI kamerou. Přepíše aktuální obrázek a každých 20 minut obrázek archivuje. Umožňuje přístup pomocí jednoduchého webového GUI. (Zamýšleno pro hostování jako statický web například na AWS S3)
 
-#Instalace
+# Instalace
 1. Raspbery PI s připojenou PI kamerou. PI kamerový modul 3 je preferován kvůli funkcím dynamického ostření.
 2. Stájnout repozitář se základními složkami a skriptem.
 `git clone https://github.com/BitterMug/birdbox.git`
@@ -13,16 +13,18 @@ Pořizuje snímky PI kamerou. Přepíše aktuální obrázek a každých 20 minu
 Nainstalujte webový server pro přístup přes prohlížeč a přidejte web s kořenovou složkou v kořenovém adresáři tohoto repozitáře. (nginx, Apache, ...)
 
 
-#Jak používat
+# Jak používat
 Pro otestování funkčnosti můžete spustit script "trigger.sh" `bash trigger.sh`.
 Ve složce ./img se vytvoří soubor "bird-current.png" (Pozor na práva uživatele pro zápis do adresáře.)
 
 Pro automatizaci lze využít Cron. Pomocí `crontab -e` přidáme úlohu `* * * * * bash <PATH_TO_FOLDER>/trigger.sh`
 
 Pokud jste využili zmíněného webserveru je dostupné i jednoduché webové rozhraní. Pod tlačítkem <b>"ARCHIVE"</b> se nachází všechny archivované snímky. Demo je přístupné k nahlédnutí na www.bcview.cz.
+
 ![Alt text](image.png)
 ![Alt text](image-1.png)
-#Licence
+
+# Licence
 MIT License
 
 Copyright (c) [2023] [Tomas Vesely]

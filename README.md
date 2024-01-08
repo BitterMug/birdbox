@@ -5,7 +5,7 @@ Pořizuje snímky PI kamerou. Přepíše aktuální obrázek a každých 20 minu
 
 # Instalace
 1. Raspberry PI s připojenou PI kamerou. PI kamerový modul 3 je preferován kvůli funkcím dynamického ostření.
-2. Stájnout repozitář se základními složkami a skriptem.
+2. Stáhnout repozitář se základními složkami a skriptem.
 `git clone https://github.com/BitterMug/birdbox.git`
 3. Nainstalujte balíček "ImageMagick" pro nástroj "convert".
 `sudo apt-get install imagemagick`
